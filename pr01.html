@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Art Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>My Art Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Background Music Controls -->
+    <div id="music-control">
+        <audio controls autoplay loop>
+            <source src="Sam Miller, Matt Badger - Sunglint (Official Music Video).mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2>My Art Gallery</h2>
+        <div class="gallery-grid">
+            <div class="art-piece">
+                <img src="https://images.unsplash.com/photo-1742590794643-5b401ed198b4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyMnx8fGVufDB8fHx8fA%3D%3D" alt="Artwork 1" onclick="openLightbox();currentSlide(1)">
+            </div>
+            <div class="art-piece">
+                <img src="https://images.unsplash.com/photo-1738680512883-204126917258?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0Mnx8fGVufDB8fHx8fA%3D%3D"alt="Artwork 2" onclick="openLightbox();currentSlide(2)">
+            </div>
+            <div class="art-piece">
+                <img src="https://images.unsplash.com/photo-1742590794614-0a5c5591530f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fHw%3D" alt="Artwork 3" onclick="openLightbox();currentSlide(3)">
+            </div>
+            <div class="art-piece">
+                <img src="https://plus.unsplash.com/premium_photo-1676528716146-ed001d9416c5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDY2fHx8ZW58MHx8fHx8" alt="Artwork 4" onclick="openLightbox();currentSlide(4)">
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <div class="lightbox-content">
+            <img class="lightbox-img" id="lightbox-img" src="">
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Welcome to my portfolio. I am an artist passionate about blending creativity and technology.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email me at <a href="mailto:alenshyju04@gmail.com">alenshyju04@gmail.com</a></p>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
